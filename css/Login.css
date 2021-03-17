@@ -41,6 +41,7 @@ body{
     font-family: 'Roboto';
     background: #FFFFFF;
     border: 2px solid #000000;
+    border-radius: 12px;
     display: flex;
     justify-content: center;
 }
@@ -52,13 +53,13 @@ body{
     align-items: center;
 }
 .L-form_login input{
-    width: 399px;
+    width: 350px;
     height: 60px;
     font-size: 25px;
     margin-bottom: 42px;
     background: #FAFAFA;
     border: 1px solid #DCDCDC;
-    border-radius: 2px;
+    border-radius: 12px;
     border: 2px solid #000000;
     text-align: center;
 }
@@ -70,16 +71,28 @@ body{
     margin-bottom: 17px;
 }
 .L-form_login button{
-    height: 76px;
     width: 230px;
+    height: 76px;
     font-size: 30px;
     border: 1px solid;
     margin-top: 35px;
     background:#1246FE;
     color: black;
     border-radius: 2px solid #000;
+    border-radius: 12px;
 }
-
+.button
+{
+    width: 230px;
+    height: 76px;
+    font-size: 30px;
+    border: 1px solid;
+    margin-top: 35px;
+    margin-left: 90px;
+    background:#1246FE;
+    color: black;
+    border-radius: 2px solid #000;
+}
 footer
 {
     Width :1366px;

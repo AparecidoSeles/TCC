@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
     <title>Document</title>
 </head>
 <body>
-    
+   
+    <div class="conteiner">
+        <h1>Cadastre-se</h1>
+            <form action='@Url.Action("casdastro")' class="">
+                <input  name="Email" type="text" class="input1" placeholder="Nome Completo" required />
+                <input  name="Email" type="email" class="input1" placeholder="Email" required />
+                <input name="Senha" type="password" class="input2" placeholder="Senha" required />
+                <input name="Senha" type="date" class="input2" placeholder="DD/MM/AA" required />
+            </form>
+    </div>
+    <footer >
+        Payment Receipts
+    </footer>
 </body>
 </html>
