@@ -1,4 +1,5 @@
 using System.IO;
+using System.Collections.Generic;
 
 namespace TCC.Models
 {
@@ -16,6 +17,31 @@ namespace TCC.Models
             if (!File.Exists(_path))
             {
                 File.Create(_path);
+            }
+        }
+
+        public List<string> ReadAllLinesCSV(string path){
+            List<string> linhas = new List<string>();
+            using(StreamReader file = new StreamReader(path))
+            {
+                string linha;
+                while ((linha = file.ReadLine()) !=null)
+                {
+                    linhas.Add(linha);
+                }
+            }
+
+            return linhas;
+        }
+
+        public void RewriteCSV(string path, List<string> linhas)
+        {
+            using(StreamWriter output = new StreamWriter(path))
+            {
+                foreach (var item in linhas)
+                {
+                    output.Write(item + '\n');
+                }
             }
         }
     }
