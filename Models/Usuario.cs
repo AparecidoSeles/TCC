@@ -1,7 +1,80 @@
+using System;
+using System.IO;
+using System.Collections.Generic;
+using TCC.Interface;
+
+
 namespace TCC.Models
 {
-    public class Usuario
+    public class Usuario : TccBase , IUsuario
     {
+        public int IdUsuario { get; set; }
         
+        public string Nome { get; set; }
+        
+        public string Email { get; set; }
+        
+        public string Senha { get; set; }
+        
+        public DateTime DataNascimento = new DateTime();
+        public string PATH = "Database/Usuario.csv";
+        
+        public Usuario()
+        {
+            CreateFolderAndFile(PATH);
+        } 
+        
+        public string Prepare(Usuario u)
+        {
+            return $"{u.IdUsuario}; {u.Nome}; {u.Senha}; {u.Email}; {u.DataNascimento}";
+        }
+        public void Create(Usuario u)
+        {
+            string[] linhas = {Prepare(u)};
+
+            File.AppendAllLines(PATH,linhas);
+        }
+
+        public void Delet(Usuario u)
+        {
+            List<string> linhas = ReadAllLinesCSV(PATH);
+
+            linhas.RemoveAll(x => x.Split(";")[0] == IdUsuario.ToString());
+        }
+
+        public List<Usuario> ReadAll()
+        {
+            List<Usuario> Usuarios = new List<Usuario>();
+
+            string[] linhas = File.ReadAllLines(PATH);
+            
+            foreach (string item in linhas)
+            {
+                string[] linha = item.Split(";");
+
+                Usuario novoUSuario = new Usuario();
+
+                novoUSuario.IdUsuario       = int.Parse(linha[0]);
+                novoUSuario.Nome            = linha[1];
+                novoUSuario.Senha           = linha[2];
+                novoUSuario.Email           = linha[3];
+                novoUSuario.DataNascimento  = DateTime.Parse(linha[4]);
+
+                Usuarios.Add(novoUSuario);
+            }
+                return Usuarios;            
+        }   
+
+        public void Update(Usuario u)
+        {
+            List<string> linhas = ReadAllLinesCSV(PATH);
+
+            linhas.RemoveAll(x => x.Split(";")[0] == u.IdUsuario.ToString());
+
+            linhas.Add(Prepare(u));
+
+            RewriteCSV(PATH, linhas);
+            
+        }
     }
 }

@@ -8,6 +8,7 @@ namespace TCC.Models
         public void CreateFolderAndFile(string _path)
         {
             string folder = _path.Split("/")[0];
+            string file = _path.Split("/")[1];
 
             if (!Directory.Exists(folder))
             {
@@ -20,7 +21,8 @@ namespace TCC.Models
             }
         }
 
-        public List<string> ReadAllLinesCSV(string path){
+        public List<string> ReadAllLinesCSV(string path)
+        {
             List<string> linhas = new List<string>();
             using(StreamReader file = new StreamReader(path))
             {
@@ -40,7 +42,7 @@ namespace TCC.Models
             {
                 foreach (var item in linhas)
                 {
-                    output.Write(item + '\n');
+                    output.Write(item + "\n");
                 }
             }
         }

@@ -9,6 +9,8 @@ namespace TCC.Models
         public System.Guid IdPublicacao { get; set; }
         
         public string Imagem { get; set; }
+
+        public DateTime Data = new DateTime();
         
         public string Legenda { get; set; }
         
@@ -20,7 +22,7 @@ namespace TCC.Models
 
         public string Prepare( Publicacao p)
         {
-            return $"{p.IdPublicacao}; {p.Imagem}; {p.Legenda}";
+            return $"{p.IdPublicacao}; {p.Imagem}; {p.Legenda};{p.Data}";
         }
 
         public void CriarPublicacao(Publicacao p)
@@ -40,10 +42,11 @@ namespace TCC.Models
             {
                 string[] linha = item.Split(";");
 
-                Publicacao novaPublicacao = new Publicacao();
+                Publicacao novaPublicacao   = new Publicacao();
                 novaPublicacao.IdPublicacao = Guid.Parse(linha[0]);
-                novaPublicacao.Imagem = linha[1];
-                novaPublicacao.Legenda = linha[2];
+                novaPublicacao.Imagem       = linha[1];
+                novaPublicacao.Legenda      = linha[2];
+                novaPublicacao.Data         = DateTime.Parse(linha[3]);
                 
                 publicacoes.Add(novaPublicacao);
             }
@@ -60,6 +63,11 @@ namespace TCC.Models
             linhas.Add( Prepare(p));
 
             RewriteCSV(PATH, linhas);
+        }
+
+        public void ExcluirPublicacao(int id)
+        {
+
         }
     }
 }
