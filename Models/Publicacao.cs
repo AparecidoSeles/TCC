@@ -1,18 +1,19 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
+using TCC.Interface;
 
 namespace TCC.Models
 {
-    public class Publicacao : TccBase
+    public class Publicacao : TccBase , IPublicacao
     {
         public System.Guid IdPublicacao { get; set; }
         
         public string Imagem { get; set; }
 
-        public DateTime Data = new DateTime();
-        
         public string Legenda { get; set; }
+
+        public DateTime Data = new DateTime();
         
         public const string PATH = "Database/Publicacoes.csv";
 
@@ -25,15 +26,16 @@ namespace TCC.Models
             return $"{p.IdPublicacao}; {p.Imagem}; {p.Legenda};{p.Data}";
         }
 
-        public void CriarPublicacao(Publicacao p)
+        public void Create(Publicacao p)
         {
             string [] linhas = {Prepare(p)};
 
             File.AppendAllLines(PATH, linhas);
         }
-        
-        public List<Publicacao> ListarPublicacao()
+
+        public List<Publicacao> ReadAll()
         {
+            {
             List<Publicacao> publicacoes = new List<Publicacao>();
 
             string[] linhas = File.ReadAllLines(PATH);
@@ -42,19 +44,21 @@ namespace TCC.Models
             {
                 string[] linha = item.Split(";");
 
-                Publicacao novaPublicacao   = new Publicacao();
-                novaPublicacao.IdPublicacao = Guid.Parse(linha[0]);
-                novaPublicacao.Imagem       = linha[1];
-                novaPublicacao.Legenda      = linha[2];
-                novaPublicacao.Data         = DateTime.Parse(linha[3]);
+                Publicacao Publicacao   = new Publicacao();
+                Publicacao.IdPublicacao = Guid.Parse(linha[0]);
+                Publicacao.Imagem       = linha[1];
+                Publicacao.Legenda      = linha[2];
+                Publicacao.Data         = DateTime.Parse(linha[3]);
                 
-                publicacoes.Add(novaPublicacao);
+                publicacoes.Add(Publicacao);
             }
 
             return publicacoes;
         }
 
-        public void EditarPublicacao( Publicacao p)
+        }
+
+        public void Update(Publicacao p)
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
 
@@ -65,9 +69,13 @@ namespace TCC.Models
             RewriteCSV(PATH, linhas);
         }
 
-        public void ExcluirPublicacao(int id)
+        public void Delet(int IdPublicacao)
         {
+            List<string> linhas = ReadAllLinesCSV(PATH);
 
+            linhas.RemoveAll(x => x.Split(";")[0] == IdPublicacao.ToString());
+            
+            RewriteCSV(PATH ,linhas);
         }
     }
 }

@@ -17,7 +17,7 @@ namespace TCC.Models
         public string Senha { get; set; }
         
         public DateTime DataNascimento = new DateTime();
-        public string PATH = "Database/Usuario.csv";
+        public const string PATH = "Database/Usuario.csv";
         
         public Usuario()
         {
@@ -35,7 +35,7 @@ namespace TCC.Models
             File.AppendAllLines(PATH,linhas);
         }
 
-        public void Delet(Usuario u)
+        public void Delet(int IdUsuario)
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
 
@@ -52,15 +52,15 @@ namespace TCC.Models
             {
                 string[] linha = item.Split(";");
 
-                Usuario novoUSuario = new Usuario();
+                Usuario USuario = new Usuario();
 
-                novoUSuario.IdUsuario       = int.Parse(linha[0]);
-                novoUSuario.Nome            = linha[1];
-                novoUSuario.Senha           = linha[2];
-                novoUSuario.Email           = linha[3];
-                novoUSuario.DataNascimento  = DateTime.Parse(linha[4]);
+                USuario.IdUsuario       = int.Parse(linha[0]);
+                USuario.Nome            = linha[1];
+                USuario.Senha           = linha[2];
+                USuario.Email           = linha[3];
+                USuario.DataNascimento  = DateTime.Parse(linha[4]);
 
-                Usuarios.Add(novoUSuario);
+                Usuarios.Add(USuario);
             }
                 return Usuarios;            
         }   

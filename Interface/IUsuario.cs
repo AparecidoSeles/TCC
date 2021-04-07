@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using TCC.Models;
 
-
 namespace TCC.Interface
 {
     public interface IUsuario
@@ -9,6 +8,6 @@ namespace TCC.Interface
         void Create(Usuario u);
         List<Usuario> ReadAll();
         void Update (Usuario u);
-        void Delet(int id);
+        void Delet(int IdUsuario);
     }
 }
