@@ -38,3 +38,4 @@ C:\Users\seles\OneDrive\Área de Trabalho\Pastas Senai\TCC\obj\Debug\net5.0\TCC.
 C:\Users\seles\OneDrive\Área de Trabalho\Pastas Senai\TCC\obj\Debug\net5.0\TCC.genruntimeconfig.cache
 C:\Users\seles\OneDrive\Área de Trabalho\Pastas Senai\TCC\obj\Debug\net5.0\TCC.csproj.CopyComplete
 C:\Users\seles\OneDrive\Área de Trabalho\Pastas Senai\TCC\obj\Debug\net5.0\Razor\Views\Usuario\index.cshtml.g.cs
+C:\Users\seles\OneDrive\Área de Trabalho\Pastas Senai\TCC\obj\Debug\net5.0\Razor\Views\Usuario\logado.cshtml.g.cs

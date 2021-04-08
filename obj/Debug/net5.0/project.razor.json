@@ -15608,6 +15608,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\TCC\\Views\\Usuario\\logado.cshtml",
+      "TargetPath": "Views\\Usuario\\logado.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\TCC\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"

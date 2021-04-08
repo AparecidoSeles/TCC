@@ -7,7 +7,7 @@ namespace TCC.Models
 {
     public class Publicacao : TccBase , IPublicacao
     {
-        public System.Guid IdPublicacao { get; set; }
+        public int IdPublicacao { get; set; }
         
         public string Imagem { get; set; }
 
@@ -23,7 +23,7 @@ namespace TCC.Models
 
         public string Prepare( Publicacao p)
         {
-            return $"{p.IdPublicacao}; {p.Imagem}; {p.Legenda};{p.Data}";
+            return $"{p.IdPublicacao}; {p.Imagem}; {p.Legenda}; {p.Data}";
         }
 
         public void Create(Publicacao p)
@@ -31,6 +31,22 @@ namespace TCC.Models
             string [] linhas = {Prepare(p)};
 
             File.AppendAllLines(PATH, linhas);
+        }
+
+        public int ProximoCodigo(){
+
+            var publicacoes = ReadAll();
+
+            if (publicacoes.Count == 0)
+            {
+                return 1;
+            }
+            
+            var id = publicacoes[publicacoes.Count - 1].IdPublicacao;
+
+            id ++;
+             
+            return id;
         }
 
         public List<Publicacao> ReadAll()
@@ -45,7 +61,7 @@ namespace TCC.Models
                 string[] linha = item.Split(";");
 
                 Publicacao Publicacao   = new Publicacao();
-                Publicacao.IdPublicacao = Guid.Parse(linha[0]);
+                Publicacao.IdPublicacao = int.Parse(linha[0]);
                 Publicacao.Imagem       = linha[1];
                 Publicacao.Legenda      = linha[2];
                 Publicacao.Data         = DateTime.Parse(linha[3]);
