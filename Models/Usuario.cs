@@ -30,9 +30,26 @@ namespace TCC.Models
         }
         public void Create(Usuario u)
         {
-            string[] linhas = {Prepare(u)};
+            u.IdUsuario = ProximoCodigo();
+            string[] linhas = {Prepare (u) };
 
             File.AppendAllLines(PATH,linhas);
+        }
+
+        public int ProximoCodigo(){
+
+            var usuarios = ReadAll();
+
+            if (usuarios.Count == 0)
+            {
+                return 1;
+            }
+            
+            var id = usuarios[usuarios.Count - 1].IdUsuario;
+
+            id ++;
+             
+            return id;
         }
 
         public void Delet(int Id)

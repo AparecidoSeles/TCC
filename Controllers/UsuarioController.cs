@@ -6,20 +6,23 @@ using System;
 
 namespace TCC.Controllers
 {
-    [Route("Cadastro")]
+    [Route("Usuario")]
     public class UsuarioController : Controller
     {
         Usuario usuarioModel = new Usuario();
-        IActionResult Index()
+
+        [Route("Listar")]
+        public IActionResult Index()
         {
             ViewBag.Usuarios = usuarioModel.ReadAll();
             return View();
         }
 
+        [Route("Cadastrar")]
         public IActionResult Cadastrar(IFormCollection form)
         {
             Usuario novousuario         = new Usuario();
-            novousuario.IdUsuario       = Int32.Parse(form["IdUsuario"]);
+            // novousuario.IdUsuario       = Int32.Parse(form["IdUsuario"]);
             novousuario.Nome            = form["Nome"];
             novousuario.Email           = form["Email"];
             novousuario.Senha           = form["Senha"];
@@ -27,7 +30,7 @@ namespace TCC.Controllers
 
             usuarioModel.Create(novousuario);
             ViewBag.Usuarios = usuarioModel.ReadAll();
-            return LocalRedirect("~/Cadastro");
+            return LocalRedirect("~/Usuario/Listar");
         }
     }
 }

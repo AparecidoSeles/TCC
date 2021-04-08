@@ -8,7 +8,7 @@ namespace TCC.Models
         public void CreateFolderAndFile(string _path)
         {
             string folder = _path.Split("/")[0];
-            string file = _path.Split("/")[1];
+            string file   = _path.Split("/")[1];
 
             if (!Directory.Exists(folder))
             {
