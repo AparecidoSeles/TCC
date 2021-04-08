@@ -69,11 +69,11 @@ namespace TCC.Models
             RewriteCSV(PATH, linhas);
         }
 
-        public void Delet(int IdPublicacao)
+        public void Delet(int Id)
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
 
-            linhas.RemoveAll(x => x.Split(";")[0] == IdPublicacao.ToString());
+            linhas.RemoveAll(x => x.Split(";")[0] == Id.ToString());
             
             RewriteCSV(PATH ,linhas);
         }

@@ -35,11 +35,11 @@ namespace TCC.Models
             File.AppendAllLines(PATH,linhas);
         }
 
-        public void Delet(int IdUsuario)
+        public void Delet(int Id)
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
 
-            linhas.RemoveAll(x => x.Split(";")[0] == IdUsuario.ToString());
+            linhas.RemoveAll(x => x.Split(";")[0] == Id.ToString());
         }
 
         public List<Usuario> ReadAll()

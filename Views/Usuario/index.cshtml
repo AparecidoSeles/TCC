@@ -1,0 +1,20 @@
+@model Usuario
+@{
+    ViewData["Title"] = " Usuario";
+}
+
+<form method="POST" action='@Url.Action("Cadastrar")'>
+    <label>Nome Completo</label>
+    <input type="text" name="Nome">
+
+    <label>Email</label>
+    <input type="email" name="Email">
+
+    <label>Senha</label>
+    <input type="text" name="Senha">
+
+    <input type="date" name="DataNascimento">
+
+    <button type="submit">Cadastrar</button>
+    
+</form>

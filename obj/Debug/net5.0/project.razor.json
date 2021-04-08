@@ -15623,6 +15623,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\TCC\\Views\\Usuario\\index.cshtml",
+      "TargetPath": "Views\\Usuario\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\TCC\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"

@@ -8,6 +8,6 @@ namespace TCC.Interface
         void Create(Usuario u);
         List<Usuario> ReadAll();
         void Update (Usuario u);
-        void Delet(int IdUsuario);
+        void Delet(int Id);
     }
 }

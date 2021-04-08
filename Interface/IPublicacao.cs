@@ -8,6 +8,6 @@ namespace TCC.Interface
         void Create( Publicacao p);
         List<Publicacao> ReadAll();
         void Update (Publicacao p);
-        void Delet(int IdPublicacao);
+        void Delet(int Id);
     }
 }
