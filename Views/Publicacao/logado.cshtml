@@ -1,0 +1,39 @@
+@model Publicacao
+@{
+    ViewData["Title"] = "Logado";
+
+    <form  method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+        
+        <label>Arquivo</label>
+        <input type="file" >
+
+        <label>Descricao</label>
+        <input type="text" >
+
+        <label>Data</label>
+        <input name="data" type="date">
+
+        <button  type="submit"> Arquivar </button>
+
+    </form>
+
+    <table class="table table-striped table-responsive">
+        <thead>
+            <th>Descricao</th>
+            <th>Data</th>
+            <th>Foto</th>
+            <th>Ação</th>
+        </thead>
+        <tbody>
+            @foreach (Publicacao publicacao in ViewBag.Publicacoes)
+            {
+                <tr>
+                    <td>@publicacao.Legenda</td>
+                    <td>@publicacao.Data</td>
+                    <td><img src="~/img/Publicacao/@publicacao.Imagem" alt="Imagem da publicacao @publicacao.Legenda" width="60"></td>
+                    <td><a asp-area="Link para excluir uma publicacao" asp-controller="Publicacao"asp-action="Excluir" asp-route-id="@publicacao.IdPublicacao"><i class="fas fa-trash"></i></a></td>
+                </tr>
+            }
+        </tbody>
+</table>
+}

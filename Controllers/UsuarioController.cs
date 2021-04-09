@@ -22,7 +22,6 @@ namespace TCC.Controllers
         public IActionResult Cadastrar(IFormCollection form)
         {
             Usuario novousuario         = new Usuario();
-            // novousuario.IdUsuario       = Int32.Parse(form["IdUsuario"]);
             novousuario.Nome            = form["Nome"];
             novousuario.Email           = form["Email"];
             novousuario.Senha           = form["Senha"];

@@ -28,7 +28,8 @@ namespace TCC.Models
 
         public void Create(Publicacao p)
         {
-            string [] linhas = {Prepare(p)};
+            p.IdPublicacao   = ProximoCodigo();
+            string [] linhas = {Prepare (p) };
 
             File.AppendAllLines(PATH, linhas);
         }

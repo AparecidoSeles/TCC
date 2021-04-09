@@ -6,13 +6,13 @@ using System;
 
 namespace TCC.Controllers
 {
-    [Route("Logado")]
+    [Route("Publicacao")]
     public class PublicacaoController : Controller
     {
         Publicacao publicacaomodel = new Publicacao();
 
         [Route("Listar")]
-        public IActionResult Listar()
+        public IActionResult Logado()
         {
             ViewBag.Publicacoes = publicacaomodel.ReadAll();
             return View();
@@ -21,15 +21,16 @@ namespace TCC.Controllers
         [Route("Cadastrar")]
         public IActionResult Cadastrar(IFormCollection form)
         {
-            Publicacao novapublicacao         = new Publicacao();
-            novapublicacao.Legenda           = form["Legenda"];
-            novapublicacao.Data  = DateTime.Parse(form["Data"]);
+            Publicacao novapublicacao  = new Publicacao();
+            // novapublicacao.Data     = DateTime.Parse(form["Data"]);
+            novapublicacao.Legenda     = form["Legenda"];
+            novapublicacao.Imagem      = form["Imagem"];
             
             if (form.Files.Count > 0)
             {
                 // Arquivo é recebido e armazenado na variável file
-                var file = form.Files[0];
-                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/Publicacao");
+                var file   = form.Files[0];
+                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img");
 
                 // Verificamos se o diretório já existe, se não, a criamos
                 if (!Directory.Exists(folder))
@@ -50,16 +51,16 @@ namespace TCC.Controllers
             }
 
             publicacaomodel.Create(novapublicacao);
-            ViewBag.publicacoes = novapublicacao.ReadAll();
-            return LocalRedirect("~/Home");
+            ViewBag.Publicacoes = publicacaomodel.ReadAll();
+            return LocalRedirect("~/Publicacao/Listar");
         }
 
         [Route("Excluir")]
         public IActionResult Excluir(int id)
         {
             publicacaomodel.Delet(id);
-            ViewBag.publicacoes = publicacaomodel.ReadAll();
-            return LocalRedirect("~/Home");
+            ViewBag.Publicacoes = publicacaomodel.ReadAll();
+            return LocalRedirect("~/Publicacao/Listar");
         }
     }
 }

@@ -23,7 +23,7 @@ namespace TCC.Models
 
         public List<string> ReadAllLinesCSV(string path)
         {
-            List<string> linhas = new List<string>();
+            List<string> linhas     = new List<string>();
             using(StreamReader file = new StreamReader(path))
             {
                 string linha;

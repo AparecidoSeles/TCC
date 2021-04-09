@@ -30,7 +30,7 @@ namespace TCC.Models
         }
         public void Create(Usuario u)
         {
-            u.IdUsuario = ProximoCodigo();
+            u.IdUsuario     = ProximoCodigo();
             string[] linhas = {Prepare (u) };
 
             File.AppendAllLines(PATH,linhas);
