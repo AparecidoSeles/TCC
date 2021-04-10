@@ -22,15 +22,14 @@ namespace TCC.Controllers
         public IActionResult Cadastrar(IFormCollection form)
         {
             Publicacao novapublicacao  = new Publicacao();
-            // novapublicacao.Data     = DateTime.Parse(form["Data"]);
             novapublicacao.Legenda     = form["Legenda"];
-            novapublicacao.Imagem      = form["Imagem"];
+            novapublicacao.Data        = DateTime.Parse(form["Data"]);
             
             if (form.Files.Count > 0)
             {
                 // Arquivo é recebido e armazenado na variável file
                 var file   = form.Files[0];
-                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img");
+                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/Publicacao");
 
                 // Verificamos se o diretório já existe, se não, a criamos
                 if (!Directory.Exists(folder))
@@ -40,7 +39,7 @@ namespace TCC.Controllers
 
                 var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/", folder, file.FileName);
 
-                using(var stream = new FileStream(path, FileMode.Create))
+                using( var stream = new FileStream(path,FileMode.Create))
                 {
                     file.CopyTo(stream);
                 }

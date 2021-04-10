@@ -15608,11 +15608,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\TCC\\Views\\Logado\\logado.cshtml",
-      "TargetPath": "Views\\Logado\\logado.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\TCC\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -15635,6 +15630,11 @@
     {
       "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\TCC\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\TCC\\Views\\Publicacao\\logado.cshtml",
+      "TargetPath": "Views\\Publicacao\\logado.cshtml",
       "FileKind": "mvc"
     },
     {

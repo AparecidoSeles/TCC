@@ -28,13 +28,13 @@ namespace TCC.Models
 
         public void Create(Publicacao p)
         {
-            p.IdPublicacao   = ProximoCodigo();
+            p.IdPublicacao   = AutoId();
             string [] linhas = {Prepare (p) };
 
             File.AppendAllLines(PATH, linhas);
         }
 
-        public int ProximoCodigo(){
+        public int AutoId(){
 
             var publicacoes = ReadAll();
 
