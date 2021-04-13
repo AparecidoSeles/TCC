@@ -1,0 +1,113 @@
+*{
+    margin:  0%;
+    padding: 0%;
+    border:  0%;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100%;
+    font-family:"roboto";
+    font-size: 50px;                            
+    background-color: white;
+}
+main
+{
+    width: 1366px;
+    height: auto;
+}
+
+.topo{
+    height: 100%;
+    width: 1366px;
+    background-color: #0554C0;
+    
+   
+}
+
+.text
+{
+    height: 143px;
+    width: 1200px;    
+    border-radius: 'nullpx';
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.perfil
+{
+    width: 50%;
+    height: 169px;
+    display: flex;
+    padding: 30px;
+    background-color: rgba(0, 0, 255, 0.363);
+    
+}
+.perfil img
+{
+    width: 126px;
+    height: 121px;
+    font-size: 25px;
+}
+
+.perfil span
+{
+    padding: 20px;
+    font-size: 25px;
+    
+}
+form
+{
+    width: 900px;
+    height: 80px;
+    padding: 30px;
+    /* border: 2px solid #000000; */
+    background-color: crimson;
+    display: flex;
+    justify-content: space-around;
+
+}
+.input
+{
+    width: 200px;
+    height: 45px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.47);
+    display: flex;
+    justify-content: center;
+}
+
+.doc
+{
+    width: 1366px;
+    height: 500px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.imagem
+{   
+    width: 50%;
+    
+    font-size: 25px;
+    list-style-type: none;
+    background-color: pink;
+}
+
+
+footer
+{
+    Width :1366px;
+    Height: 81px;
+    font-family: 'Roboto';
+    font-size: 50px;
+    color: #FFFFFF;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}

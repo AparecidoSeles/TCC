@@ -12,7 +12,7 @@ namespace TCC.Controllers
         Usuario usuarioModel = new Usuario();
 
         [Route("Listar")]
-        public IActionResult Index()
+        public IActionResult cadastro()
         {
             ViewBag.Usuarios = usuarioModel.ReadAll();
             return View();

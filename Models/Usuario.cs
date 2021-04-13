@@ -26,7 +26,7 @@ namespace TCC.Models
         
         public string Prepare(Usuario u)
         {
-            return $"{u.IdUsuario}; {u.Nome}; {u.Senha}; {u.Email}; {u.DataNascimento}";
+            return $"{u.IdUsuario};{u.Nome};{u.Senha};{u.Email};{u.DataNascimento}";
         }
         public void Create(Usuario u)
         {

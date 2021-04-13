@@ -14,16 +14,23 @@ namespace TCC.Models
         public string Legenda { get; set; }
 
         public DateTime Data = new DateTime();
-        
         public const string PATH = "Database/Publicacoes.csv";
 
+
+        //Método para mostrar somente data 
+        // public void DataPublicacao()
+        // {
+        //     var dataHoraInical = new DateTime();
+        //     dataHoraInical.ToString("dd,MM,yyyy");
+        // }
+        
         public Publicacao(){
             CreateFolderAndFile(PATH);
         }
 
         public string Prepare( Publicacao p)
         {
-            return $"{p.IdPublicacao}; {p.Imagem}; {p.Legenda}; {p.Data}";
+            return $"{p.IdPublicacao};{p.Imagem};{p.Legenda};{p.Data}";
         }
 
         public void Create(Publicacao p)

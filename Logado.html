@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Logado.css">
+    <title>Logado</title>
+</head>
+<body>
+    <header class="topo">
+        <div class="text">
+            <h1>Payment Receipts</h1>
+        </div>
+    </header>
+    <main>
+        <div class="perfil">
+            <img src="img/padrao 1.svg" alt="imagem sem foto de perfil">
+            <span>Nome Logado da conta</span>
+        </div>
+        <div>
+            <form action='@Url.Action("NovaPublicacao")' method="POST" enctype="multipart/form-data">
+
+                <input class="arquivo"type="file" placeholder="Arquivo" required>
+                <input class="desc" type="text" placeholder="Descrição" required>
+                <input class="data" name="DataNascimento" type="date" placeholder="Data de nascimento" required />
+                <button class="criar" type="submit"> Arquivar </button>
+            </form>
+        </div >
+        <div class="doc">
+
+        </div>
+    </main>
+    <footer >
+        Payment Receipts
+    </footer>
+</body>
+</html>

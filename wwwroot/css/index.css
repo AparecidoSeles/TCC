@@ -1,0 +1,142 @@
+*{
+    margin:  0%;
+    padding: 0%;
+    border:  0%;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family:"roboto";
+    font-size: 50px;                   
+    background-color: white;
+}
+
+.topo{
+    height: 100%;
+    width: 1366px;
+    background-color: #0554C0;
+    
+   
+}
+
+.text
+{
+    height: 143px;
+    width: 1200px;    
+    border-radius: 'nullpx';
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.entrar
+{
+    height: 169px;
+    width: 1366px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 45px;
+    background: #FFFDFD;
+    border: 2px solid #000000;
+}
+
+
+.btn{
+    width: 240px;
+    height: 75px;
+    font-size: 50px;
+    color: #000;
+    text-decoration:none;
+    background-color:#FFFFFF;
+    border: 2px solid #000000;
+    display :flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn2
+{
+    width: 350px;
+    height: 78px;
+    font-size: 50px;
+    text-decoration: none;
+    color: #000;
+    background-color: #FFF;
+    border: 2px solid #000000;
+    display :flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.content{
+    width: 1366px;
+    height: 169px;
+    background-color: #FFFDFD;  
+    display: flex;
+}
+.campos
+{
+    width: 720px;
+    height: 169px;
+    border: 2px solid #000000;
+}
+
+.campos p
+{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.content2
+{
+    width: 1366px;
+    height: 100%;
+    background-color: #FFFDFD;  
+    display: flex;
+}
+
+.img
+{
+    width: 683px;
+    height: 416px;
+    border: 2px solid #000000;
+
+    /* background-color: turquoise; */
+}
+.img2
+{
+    width: 683px;
+    height: 418px;
+    border: 2px solid #000000;
+
+    /* background-color: turquoise; */
+}
+.content2 h1 
+{
+    font-family: 'Roboto';
+    font-size: 45px;
+    padding-top: 75px;
+    padding-left: 50px;
+  
+}   
+.content2 h2 
+{
+    font-family: 'Roboto';
+    font-size: 40px;
+    padding-top: 75px;
+    padding-left: 100px;
+}
+
+footer
+{
+    Width :1366px;
+    Height: 81px;
+    font-family: 'Roboto';
+    font-size: 50px;
+    color: #FFFFFF;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}

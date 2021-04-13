@@ -18,9 +18,17 @@ namespace TCC.Controllers
             return View();
         }
 
+        //Método para mostrar somente data 
+        // public void Data()
+        // {
+        //     var Data  = new DateTime();
+        //     Data.ToString("dd,MM,yyyy");
+        // }
         [Route("Cadastrar")]
+
         public IActionResult Cadastrar(IFormCollection form)
         {
+
             Publicacao novapublicacao  = new Publicacao();
             novapublicacao.Legenda     = form["Legenda"];
             novapublicacao.Data        = DateTime.Parse(form["Data"]);
@@ -54,7 +62,7 @@ namespace TCC.Controllers
             return LocalRedirect("~/Publicacao/Listar");
         }
 
-        [Route("Excluir")]
+        [Route("Id")]
         public IActionResult Excluir(int id)
         {
             publicacaomodel.Delet(id);

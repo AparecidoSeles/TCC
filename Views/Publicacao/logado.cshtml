@@ -2,6 +2,48 @@
 @{
     ViewData["Title"] = "Logado";
 }
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/Logado.css">
+    <title>Logado</title>
+</head>
+<body>
+    <main>
+        <div class="perfil">
+            <img src="img/padrao 1.svg" alt="imagem sem foto de perfil">
+            <span>Nome Logado da conta</span>
+        </div>
+        <div>
+            <form action='@Url.Action("Cadastrar")' method="POST" enctype="multipart/form-data">
+
+                <input class="desc"    type="text" placeholder="Descrição" name="Legenda"   required>
+                <input class="arquivo" type="file" placeholder="Arquivo"   name="Imagem">
+                <input class="data"    type="date" placeholder="Data"      name="Data"      required />
+                <button class="criar"  type="submit"> Arquivar </button>
+            </form>
+        </div >
+        <div class="doc">
+            @foreach (Publicacao publicacao in ViewBag.Publicacoes)
+            {
+                <li class="imagem">
+                    <img src="~/img/Publicacao/@publicacao.Imagem" alt="Imagem da publicacao @publicacao.Legenda" width="60">
+                    <p>@publicacao.Legenda</p>
+                    <p>@publicacao.Data</p>
+                    <a asp-area="Link para excluir uma publicacao" asp-controller="Publicacao"asp-action="Excluir" asp-route-id="@publicacao.IdPublicacao">Excluir</a> 
+                </li>
+                                                                                                                                                @* </i><i class="fas fa-trash"> *@
+            }
+        </div>
+    </main>
+    <footer >
+        Payment Receipts
+    </footer>
+</body>
+</html>
+@* <link rel="stylesheet" href="~/css/Logado.css">
     <form  method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
         
         <label>Descricao</label>
@@ -25,14 +67,6 @@
             <th>Ação</th>
         </thead>
         <tbody>
-            @foreach (Publicacao publicacao in ViewBag.Publicacoes)
-            {
-                <tr>
-                    <td>@publicacao.Legenda</td>
-                    <td>@publicacao.Data</td>
-                    <td><img src="wwwroot/img/Publicacao/@publicacao.Imagem" alt="Imagem da publicacao @publicacao.Legenda" width="60"></td>
-                    <td><a asp-area="Link para excluir uma publicacao" asp-controller="Publicacao"asp-action="Excluir" asp-route-id="@publicacao.IdPublicacao"><i class="fas fa-trash"></i></a></td>
-                </tr>
-            }
+           
         </tbody>
-</table>
+</table> *@

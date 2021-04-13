@@ -1,0 +1,35 @@
+@model Usuario
+@{
+    ViewData["Title"] = " Cadastro";
+}
+<link rel="stylesheet" href="~/css/cadastro.css" />
+<body>
+    <div class="conteiner">
+        <h1>Cadastre-se</h1>
+        <form class="cdtr" method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+            <input class="input1"  name="Nome" type="text" placeholder="Nome Completo" required />
+            <input class="input1"  name="Email" type="email" placeholder="Email" required />
+            <input class="input2"  name="Senha" type="password" placeholder="Senha" required />
+            <input class="input2"  name="DataNascimento" type="date" placeholder="Data de nascimento" required />
+            <button type="submit">Casdastre-se</button>
+            @* <label>Nome Completo</label>
+            <input type="text" name="Nome">
+
+            <label>Email</label>
+            <input type="email" name="Email">
+
+            <label>Senha</label>
+            <input type="text" name="Senha">
+
+            <input type="date" name="DataNascimento">
+
+            <button type="submit">Cadastrar</button> *@
+    
+        </form>
+
+    </div>
+    <div class="content2">
+            <p>Já possui uma conta?   <a asp-area="" asp-action="Login" asp-controller="Usuario">Conecte-se</a></p>
+        </div>
+</body>
+

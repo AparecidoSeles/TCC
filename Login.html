@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/Login.css">
+    <title>TCC-Logar</title>
+</head>
+    <body class="L-body">
+        <div class="L-corpo">
+
+            <div class="retangulo1">
+                <div class="content">
+    
+                    <h1 class="login">Login</h1>
+                    
+                    <form method="POST" action='@Url.Action("Logar")'class="L-form_login" >
+                        <input  name="Email" type="email" class="input1" placeholder="Email" required />
+                        <input name="Senha" type="password" class="input2" placeholder="Senha" required />
+                        <button type="submit">Entrar</button> 
+                       <!--  <input class="button"type="button" value="entre">-->
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            Payment Receipts
+        </footer>
+</body>
+</html>

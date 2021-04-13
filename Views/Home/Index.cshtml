@@ -1,11 +1,48 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/index.css" />
+</head>
 
-    <a class="navbar-brand" asp-area="" asp-action="index" asp-controller="Usuario">Usuario</a>
-    <a class="navbar-brand" asp-area="" asp-action="Logado" asp-controller="Publicacao">Logado</a>
-</div>
+<body>
+    <main>
+       
+        <div class="entrar"> <!-- inicio entrar-->
+            
+            <a class="btn" href="Login.html">Entrar</a>
+            <a class="btn2" asp-area="" asp-action="cadastro" asp-controller="Usuario">Cadastre-se</a>
+            <a class="navbar-brand" asp-area="" asp-action="Logado" asp-controller="Publicacao">Logado</a>
+             
+         </div><!--fim entrar  -->
+         <section class="content">
+            <div class="campos">  <p>Fale com os representantes</p>
+            </div>
+            <div class="campos">
+              <p>Notas Fiscais e Recibos</p>
+            </div>
+         </section>
+         <section class="content2">
+            <div class="img">
+                <img src="images/cadeado.svg" alt="imagem de um cadeado">
+            </div >
+            <div class="img2">
+                <h1>Não perca seus documentos</h1>
+                <h2>Guarde suas Notas Fiscais,<br>Recibos e Comprovantes</h2>
+            </div>
+         </section>
+       
+    </main>
+    <footer >
+        Payment Receipts
+    </footer>
+</body>
+
+</html>
