@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\TCC\\TCC.csproj",
+  "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\TCC\\TCC.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,38 +15619,43 @@
   "RootNamespace": "TCC",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\TCC\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\TCC\\Views\\Usuario\\cadastro.cshtml",
+      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\TCC\\Views\\Usuario\\cadastro.cshtml",
       "TargetPath": "Views\\Usuario\\cadastro.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\TCC\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\TCC\\Views\\Publicacao\\logado.cshtml",
+      "TargetPath": "Views\\Publicacao\\logado.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\TCC\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\TCC\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\TCC\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\TCC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\TCC\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\TCC\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\TCC\\Views\\Publicacao\\logado.cshtml",
-      "TargetPath": "Views\\Publicacao\\logado.cshtml",
+      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\TCC\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\TCC\\Views\\Login\\login.cshtml",
+      "TargetPath": "Views\\Login\\login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\TCC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     }
   ],

@@ -20,7 +20,10 @@
             <form action='@Url.Action("Cadastrar")' method="POST" enctype="multipart/form-data">
 
                 <input class="desc"    type="text" placeholder="Descrição" name="Legenda"   required>
-                <input class="arquivo" type="file" placeholder="Arquivo"   name="Imagem">
+
+                <input class="arquivo" type="file" placeholder="Arquivo"   name="Imagem"    required>
+                <label for='selecao-arquivo'>Escolha a imagem</label>
+
                 <input class="data"    type="date" placeholder="Data"      name="Data"      required />
                 <button class="criar"  type="submit"> Arquivar </button>
             </form>

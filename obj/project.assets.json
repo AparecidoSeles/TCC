@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\TCC\\TCC.csproj",
+      "projectUniqueName": "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\TCC\\TCC.csproj",
       "projectName": "TCC",
-      "projectPath": "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\TCC\\TCC.csproj",
+      "projectPath": "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\TCC\\TCC.csproj",
       "packagesPath": "C:\\Users\\seles\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\TCC\\obj\\",
+      "outputPath": "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\TCC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\seles\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -63,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

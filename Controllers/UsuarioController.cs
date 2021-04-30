@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TCC.Models;
-using System.IO; 
 using System; 
 
 namespace TCC.Controllers
@@ -11,10 +10,9 @@ namespace TCC.Controllers
     {
         Usuario usuarioModel = new Usuario();
 
-        [Route("Listar")]
+        
         public IActionResult cadastro()
         {
-            ViewBag.Usuarios = usuarioModel.ReadAll();
             return View();
         }
 
@@ -28,7 +26,7 @@ namespace TCC.Controllers
             novousuario.DataNascimento  = DateTime.Parse(form["DataNascimento"]);
 
             usuarioModel.Create(novousuario);
-            ViewBag.Usuarios = usuarioModel.ReadAll();
+            
             return LocalRedirect("~/Usuario/Listar");
         }
     }
