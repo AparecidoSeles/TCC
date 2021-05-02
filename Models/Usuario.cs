@@ -19,6 +19,10 @@ namespace TCC.Models
         public DateTime DataNascimento = new DateTime();
         public const string PATH = "Database/Usuario.csv";
         
+        // public string _PATH 
+        // {
+        //     get{return PATH;}
+        // }
         public Usuario()
         {
             CreateFolderAndFile(PATH);
@@ -93,5 +97,29 @@ namespace TCC.Models
             RewriteCSV(PATH, linhas);
             
         }
+
+        public Usuario ObterUsuarioDaSessao(int userId)
+        {
+            List<string> usuarios = ReadAllLinesCSV(PATH);
+
+            // Traz os dados do usuário logado. Exemplo: 1;Nome;Foto;DataNascimento;Username;Email;Senha
+            var userLogado = usuarios.Find(x => x.Split(";")[0] == userId.ToString());
+
+            string[] atributo = userLogado.Split(";");
+            // var formato = new CultureInfo("en-US");
+
+            Usuario novoUsuario = new Usuario();
+            novoUsuario.IdUsuario = int.Parse(atributo[0]);
+            novoUsuario.Nome = atributo[1];
+            //novoUsuario.Foto = atributo[2];
+            //novoUsuario.DataNascimento = DateTime.ParseExact(atributo[3],"g",formato);
+            novoUsuario.DataNascimento = DateTime.Parse(atributo[3]);
+            //novoUsuario.Username = atributo[4];
+            novoUsuario.Email = atributo[5];
+            novoUsuario.Senha = atributo[6];
+
+            return novoUsuario;
+        }
+
     }
 }

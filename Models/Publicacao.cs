@@ -24,7 +24,8 @@ namespace TCC.Models
         //     dataHoraInical.ToString("dd,MM,yyyy");
         // }
         
-        public Publicacao(){
+        public Publicacao()
+        {
             CreateFolderAndFile(PATH);
         }
 
