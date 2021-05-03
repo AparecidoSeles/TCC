@@ -27,7 +27,7 @@ namespace TCC.Controllers
 
             usuarioModel.Create(novousuario);
             
-            return LocalRedirect("~/Usuario/Cadastrar");
+            return LocalRedirect("~/Login");
         }
     }
 }

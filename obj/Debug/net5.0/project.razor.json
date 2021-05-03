@@ -15624,6 +15624,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\TCC\\Views\\Login\\index.cshtml",
+      "TargetPath": "Views\\Login\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\TCC\\Views\\Publicacao\\logado.cshtml",
       "TargetPath": "Views\\Publicacao\\logado.cshtml",
       "FileKind": "mvc"
@@ -15646,11 +15651,6 @@
     {
       "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\TCC\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\seles\\OneDrive\\Área de Trabalho\\TCC\\Views\\Login\\login.cshtml",
-      "TargetPath": "Views\\Login\\login.cshtml",
       "FileKind": "mvc"
     },
     {

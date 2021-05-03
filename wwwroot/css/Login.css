@@ -92,7 +92,14 @@ body{
     color: black;
     border-radius: 2px solid #000;
 }
+
+.erro 
+{
+    color: red;
+}
+
 footer
+
 {
     Width :1366px;
     Height: 81px;

@@ -13,8 +13,10 @@
 <body>
     <main>
         <div class="perfil">
-            <img src="img/padrao 1.svg" alt="imagem sem foto de perfil">
-            <span>Nome Logado da conta</span>
+            @if(ViewBag.UserName != null)
+            {
+                <span> Olá @ViewBag.UserName</span>
+            }
         </div>
         <div>
             <form action='@Url.Action("Cadastrar")' method="POST" enctype="multipart/form-data">
@@ -24,7 +26,7 @@
                 <label for='selecao-arquivo'>Escolha a imagem</label>
                 <input class="arquivo" type="file"id="selecao-arquivo" placeholder="Arquivo"   name="Imagem"    required>
 
-                <input class="data"    type="date" placeholder="Data"      name="Data"      required />
+                <input  class="data"   type="date" placeholder="Data"      name="Data"      required />
                 <button class="criar"  type="submit"> Arquivar </button>
             </form>
         </div >

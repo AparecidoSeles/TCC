@@ -14,6 +14,8 @@ namespace TCC.Controllers
         [Route("Listar")]
         public IActionResult Logado()
         {
+
+            ViewBag.Username    = HttpContext.Session.GetString("_UserName");
             ViewBag.Publicacoes = publicacaomodel.ReadAll();
             return View();
         }

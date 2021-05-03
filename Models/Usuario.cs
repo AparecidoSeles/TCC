@@ -17,12 +17,12 @@ namespace TCC.Models
         public string Senha { get; set; }
         
         public DateTime DataNascimento = new DateTime();
-        public const string PATH = "Database/Usuario.csv";
+        public string PATH = "Database/Usuario.csv";
         
-        // public string _PATH 
-        // {
-        //     get{return PATH;}
-        // }
+        public string _PATH 
+        {
+            get{return PATH;}
+        }
         public Usuario()
         {
             CreateFolderAndFile(PATH);

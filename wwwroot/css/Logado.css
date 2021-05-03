@@ -41,7 +41,7 @@ main
     height: 169px;
     display: flex;
     padding: 30px;
-    background-color: rgba(0, 0, 255, 0.363);
+    /* background-color: rgba(0, 0, 255, 0.363); */
     
 }
 .perfil img
