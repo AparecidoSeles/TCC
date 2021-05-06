@@ -2,7 +2,7 @@
     ViewData["Title"] = " Cadastro";
 }
 <link rel="stylesheet" href="~/css/cadastro.css" />
-<body>
+
     <div class="conteiner">
         <h1>Cadastre-se</h1>
         <form class="cdtr" method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
@@ -28,7 +28,6 @@
 
     </div>
     <div class="content2">
-            <p>Já possui uma conta?   <a asp-area="" asp-action="Login" asp-controller="Usuario">Conecte-se</a></p>
-        </div>
-</body>
+            <p>Já possui uma conta? <a asp-area="" asp-action="Login" asp-controller="Login"> Conecte-se</a></p>
+    </div>
 

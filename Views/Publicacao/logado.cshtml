@@ -18,29 +18,41 @@
                 <span> Olá @ViewBag.UserName</span>
             }
         </div>
-        <div>
-            <form action='@Url.Action("Cadastrar")' method="POST" enctype="multipart/form-data">
+        <div class="Adicionar-conteudo">
+            <form method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+                <div class="busca">
+                    <ul class="flex-cent-bt">
+                        <div class="digite" >  
+                             <li><input  type="text"  name="Legenda" placeholder="Descrição Arquivo" required></li>
+                        </div>
 
-                <input class="desc"    type="text" placeholder="Descrição" name="Legenda"   required>
+                        <div class="escolher">
+                             <input  type="file" id="selecao-arquivo" name="Imagem" equired>
+                        </div>
 
-                <label for='selecao-arquivo'>Escolha a imagem</label>
-                <input class="arquivo" type="file"id="selecao-arquivo" placeholder="Arquivo"   name="Imagem"    required>
-
-                <input  class="data"   type="date" placeholder="Data"      name="Data"      required />
-                <button class="criar"  type="submit"> Arquivar </button>
+                        <div class="data">
+                            <input  class="data" type="date" placeholder="Data"  name="Data"  required />
+                        </div>
+                        
+                        <div class="postar">
+                            <li><button  type="submit">Arquivar</button></li>
+                        </div>
+                    </ul>
+                </div>
             </form>
         </div >
         <div class="doc">
-            @foreach (Publicacao publicacao in ViewBag.Publicacoes)
-            {
-                <li class="imagem">
-                    <img src="~/img/Publicacao/@publicacao.Imagem" alt="Imagem da publicacao @publicacao.Legenda" width="60">
-                    <p>@publicacao.Legenda</p>
-                    <p>@publicacao.Data</p>
-                    <a asp-area="Link para excluir uma publicacao" asp-controller="Publicacao"asp-action="Excluir" asp-route-id="@publicacao.IdPublicacao">Excluir</a> 
-                </li>
-                                                                                                                                                @* </i><i class="fas fa-trash"> *@
-            }
+            <ul>
+                @foreach (Publicacao publicacao in ViewBag.Publicacoes)
+                {
+                    <li class="imagem">
+                        <img src="~/img/Publicacao/@publicacao.Imagem" alt="Imagem da publicacao @publicacao.Legenda">
+                        <p>@publicacao.Legenda</p>
+                        <p>@publicacao.Data</p>
+                        <a asp-area="Link para excluir uma publicacao" asp-controller="Publicacao"asp-action="Excluir" asp-route-id="@publicacao.IdPublicacao">Excluir</a> 
+                    </li>
+                }
+            </ul>
         </div>
     </main>
     <footer >
@@ -48,30 +60,4 @@
     </footer>
 </body>
 </html>
-@* <link rel="stylesheet" href="~/css/Logado.css">
-    <form  method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
-        
-        <label>Descricao</label>
-        <input type="text" name="Legenda" required/>
 
-        <label>Foto</label>
-        <input type="file" name="Imagem" required/>
-
-        <label>Data</label>
-        <input name="Data" type="date" required/>
-
-        <button  type="submit"> Arquivar </button>
-
-    </form>
-
-    <table class="table table-striped table-responsive">
-        <thead>
-            <th>Descricao</th>
-            <th>Data</th>
-            <th>Imagem</th>
-            <th>Ação</th>
-        </thead>
-        <tbody>
-           
-        </tbody>
-</table> *@

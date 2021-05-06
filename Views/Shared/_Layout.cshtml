@@ -3,26 +3,27 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @* <link rel="stylesheet" href="~/css/Login.css" />
+    <link rel="stylesheet" href="~/css/Logado.css" />
+    <link rel="stylesheet" href="~/css/cadastro.css" />
+    <link rel="stylesheet" href="~/css/index.css" /> *@
+
     <title>@ViewData["Title"] - TCC</title>
     @switch (ViewData["Title"])
     {
-        case "Login":
+       case "Login":
             <link rel="stylesheet" href="~/css/Login.css" />
             break;
 
-        case "Feed":
-            <link rel="stylesheet" href="~/css/Feed.css" />
-            break;
-
-        case "Logado":
+          case "Publicacao":
             <link rel="stylesheet" href="~/css/Logado.css" />
-            break;
+            break; 
 
-        case "Cadastro":
+        case "Usuario":
             <link rel="stylesheet" href="~/css/cadastro.css" />
             break;
 
-        case "index":
+        case "Home":
             <link rel="stylesheet" href="~/css/index.css" />
             break;
         default:
@@ -30,12 +31,12 @@
     }
 </head>
 <body>
-    @switch (ViewData["Title"])
+    @* @switch (ViewData["Title"])
     {
-        case "Login":
+        case "Home":
             break;
 
-        case "Cadastro":
+        case "cadastro":
         break;
 
         default:
@@ -44,15 +45,24 @@
                 <h1>Payment Receipts</h1>
             </div>
       </header>
+
         break;
-    }
+    }  *@
     
-    
-    <div class="container">
+     @if((ViewData["Title"].ToString() != "home") && (ViewData["Title"].ToString() != "Cadastro"))
+            {
+                <header class="topo">
+                    <div class="text">
+                        <h1>Payment Receipts</h1>
+                    </div>
+                </header>
+            }
+         
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-    </div>
+
+           
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

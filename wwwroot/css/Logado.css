@@ -21,9 +21,7 @@ main
 .topo{
     height: 100%;
     width: 1366px;
-    background-color: #0554C0;
-    
-   
+    background-color: #0554C0;  
 }
 
 .text
@@ -63,10 +61,16 @@ form
     height: 80px;
     padding: 30px;
     /* border: 2px solid #000000; */
-    background-color: crimson;
+    /* background-color: crimson; */
     display: flex;
     justify-content: space-around;
 
+}
+
+.form
+{
+    list-style-type: none;
+    text-decoration: none;
 }
 .input
 {
@@ -81,22 +85,46 @@ form
     justify-content: center;
 }
 
-.doc
+
+
+.doc 
 {
     width: 1366px;
     height: 500px;
     font-size: 30px;
+    margin-left: 200px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
+
+.doc ul {
+    width: 910px;
+    height: 1000px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    /* justify-content: space-around; */flex-wrap: wrap;
+    
+    background-color: #FFFFFF;
+    overflow-x: auto;
+}
+
+.doc ul::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
 .imagem
 {   
-    width: 50%;
-    
     font-size: 25px;
     list-style-type: none;
-    background-color: pink;
+    background-color: rgba(0, 0, 255, 0.288);
+}
+
+.doc img
+{
+    width: 100px;
+    height: 100px;
 }
 
 

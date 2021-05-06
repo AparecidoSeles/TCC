@@ -15,7 +15,7 @@ namespace TCC.Controllers
         
         Usuario usuarioModel = new Usuario();
 
-        public IActionResult index()
+        public IActionResult login()
         {
             return View();
         }
