@@ -21,7 +21,7 @@
         <div class="Adicionar-conteudo">
             <form method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
                 <div class="busca">
-                    <ul class="flex-cent-bt">
+                    
                         <div class="digite" >  
                              <li><input  type="text"  name="Legenda" placeholder="Descrição Arquivo" required></li>
                         </div>
@@ -37,10 +37,15 @@
                         <div class="postar">
                             <li><button  type="submit">Arquivar</button></li>
                         </div>
-                    </ul>
                 </div>
             </form>
-        </div >
+             <div class="search-container">
+                    <div id="search">
+                        @* <img src="img/img-header/Vector.svg" alt="Procurar" /> *@
+                        <input id="buscar" type="text" placeholder="Procurar" />
+                    </div>
+                </div>
+        </div>
         <div class="doc">
             <ul>
                 @foreach (Publicacao publicacao in ViewBag.Publicacoes)
@@ -48,7 +53,7 @@
                     <li class="imagem">
                         <img src="~/img/Publicacao/@publicacao.Imagem" alt="Imagem da publicacao @publicacao.Legenda">
                         <p>@publicacao.Legenda</p>
-                        <p>@publicacao.Data</p>
+                        @* <p>@publicacao.Data</p> *@
                         <a asp-area="Link para excluir uma publicacao" asp-controller="Publicacao"asp-action="Excluir" asp-route-id="@publicacao.IdPublicacao">Excluir</a> 
                     </li>
                 }

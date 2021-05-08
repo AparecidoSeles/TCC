@@ -19,8 +19,8 @@ main
 }
 
 .topo{
-    height: 100%;
     width: 1366px;
+    height: 150px;
     background-color: #0554C0;  
 }
 
@@ -33,56 +33,118 @@ main
     justify-content: center;
     padding-top: 20px;
 }
+
+.text h1
+{
+    font-size: 80px;
+}
+
 .perfil
 {
     width: 50%;
-    height: 169px;
+    height: 99px;
     display: flex;
     padding: 30px;
-    /* background-color: rgba(0, 0, 255, 0.363); */
-    
-}
-.perfil img
-{
-    width: 126px;
-    height: 121px;
-    font-size: 25px;
 }
 
 .perfil span
 {
     padding: 20px;
-    font-size: 25px;
-    
+    font-size: 45px;   
+}
+.Adicionar-conteudo
+{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* background-color: blue; */
 }
 form
 {
-    width: 900px;
-    height: 80px;
-    padding: 30px;
+   
+    /* padding: 30px; */
     /* border: 2px solid #000000; */
     /* background-color: crimson; */
     display: flex;
-    justify-content: space-around;
-
-}
-
-.form
-{
+    /* justify-content: space-between; */
+    /* align-items: center; */
     list-style-type: none;
-    text-decoration: none;
 }
-.input
-{
-    width: 200px;
-    height: 45px;
-    background: #FFFFFF;
-    border-radius: 12px;
-    font-family: 'Roboto';
-    font-size: 20px;
-    color: rgba(0, 0, 0, 0.47);
+
+.busca
+{ 
+    width: 900px;
+    height: 80px;
+    margin-left: 15px;
     display: flex;
+    align-items: baseline;                  /* manter os itens alinhados em linha */
+    justify-content: space-around;
+    /* background-color: blue; */
+}
+
+.digite input 
+{
+    width: 231px;
+    height: 27px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #DCDCDC;
+}
+
+.escolher input {
+    width: 110px;
+    height: auto;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 600;
+    /* background-color: black; */
+    /* background-color: #D1D1D1; */
+    display: flex;
+    align-items: center;
     justify-content: center;
+}
+
+.data
+{
+    width: 180px;
+    height: 27px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid #DCDCDC;
+}
+
+.Adicionar-conteudo button {
+    width: 140px;
+    height: 27px;
+    background-color: #2686CC;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+}
+
+                /* ------pesquiar--------- */
+
+.search-container {
+    /* width: 90px;
+    height: 50px;
+    border-radius: 0.2rem;
+    margin-left: 7.7rem; */
+
+    width: 231px;
+    height: 27px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    justify-items: flex-end ;
+    text-align: center;
+    border: 1px solid #DCDCDC;
 }
 
 
@@ -99,15 +161,18 @@ form
 }
 
 .doc ul {
-    width: 910px;
+    width: 1000px;
     height: 1000px;
+    /* padding-top: 20px; */
+    padding-left: 20px;
+
     display: flex;
-    /* flex-direction: column; */
+    background-color: rgb(159, 228, 240);
     justify-content: space-between;
-    /* justify-content: space-around; */flex-wrap: wrap;
-    
-    background-color: #FFFFFF;
-    overflow-x: auto;
+    flex-wrap: wrap;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    overflow-x: auto;                     /*serve para deixar o quadrado de scroll dentro da main  , para nao atravessar outra div */
 }
 
 .doc ul::-webkit-scrollbar {
@@ -115,18 +180,24 @@ form
     height: 0;
 }
 .imagem
-{   
+{   width: 220px;
     font-size: 25px;
     list-style-type: none;
-    background-color: rgba(0, 0, 255, 0.288);
+    margin-top: 20px;
+
+    /* background-color: rgba(0, 0, 255, 0.288); */
 }
 
 .doc img
 {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 
+.doc li
+{
+    list-style-position: none;
+}
 
 footer
 {
