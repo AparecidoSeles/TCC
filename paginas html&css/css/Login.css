@@ -1,0 +1,105 @@
+*{
+    margin:  0%;
+    padding: 0%;
+    border:  0%;
+    box-sizing: border-box;
+
+}
+
+body{
+    width:1366px;
+    height: 1024px;
+    background-color: #FFF;
+    font-family: 'Segoe UI';
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.retangulo1{
+    width: 686px;
+    height: 569px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #C4C4C4;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+
+}
+
+.login 
+{
+    font-size: 60px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: center;
+    /* width: 400px;
+    height: 110px; */
+    /* background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 12px; */
+}
+
+.L-form_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.L-form_login input{
+    width: 350px;
+    height: 60px;
+    font-size: 25px;
+    margin-bottom: 42px;
+    background: #FAFAFA;
+    border: 1px solid #DCDCDC;
+    border-radius: 12px;
+    border: 2px solid #000000;
+    text-align: center;
+}
+.L-form_login .input1{
+    
+    margin-top: 20px;
+}
+.L-form_login .input2{
+    margin-bottom: 17px;
+}
+.L-form_login button{
+    width: 230px;
+    height: 76px;
+    font-size: 30px;
+    border: 1px solid;
+    margin-top: 35px;
+    background:#1246FE;
+    color: black;
+    border-radius: 2px solid #000;
+    border-radius: 12px;
+}
+.button
+{
+    width: 230px;
+    height: 76px;
+    font-size: 30px;
+    border: 1px solid;
+    margin-top: 35px;
+    margin-left: 90px;
+    background:#1246FE;
+    color: black;
+    border-radius: 2px solid #000;
+}
+footer
+{
+    Width :1366px;
+    Height: 81px;
+    font-family: 'Roboto';
+    font-size: 50px;
+    color: #FFFFFF;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,87 @@
+*{
+    margin:  0%;
+    padding: 0%;
+    border:  0%;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family:"roboto";
+    font-size: 50px;                            
+    background-color: white;
+}
+main
+{
+    width: 1366px;
+    height: 366px;
+}
+
+.topo{
+    height: 100%;
+    width: 1366px;
+    background-color: #0554C0;
+    
+   
+}
+
+.text
+{
+    height: 143px;
+    width: 1200px;    
+    border-radius: 'nullpx';
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.perfil
+{
+    width: 1366;
+    height: 169px;
+    display: flex;
+    padding: 30px;
+    
+}
+.perfil img
+{
+    width: 126px;
+    height: 121px;
+}
+
+.perfil span
+{
+    padding: 20px;
+    font-size: 25px;
+    
+}
+form
+{
+    width: 900px;
+    height: 80px;
+    padding: 30px;
+    /* border: 2px solid #000000; */
+
+}
+.input
+{
+    width: 200px;
+    height: 45px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.47);
+    display: flex;
+    justify-content: center;
+}
+footer
+{
+    Width :1366px;
+    Height: 81px;
+    font-family: 'Roboto';
+    font-size: 50px;
+    color: #FFFFFF;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}

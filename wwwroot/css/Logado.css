@@ -172,7 +172,7 @@ form
     flex-wrap: wrap;
     border: 1px solid #000000;
     border-radius: 10px;
-    overflow-x: auto;                     /*serve para deixar o quadrado de scroll dentro da main  , para nao atravessar outra div */
+    overflow-x: auto;         /*serve para deixar o quadrado de scroll dentro da main , para nao atravessar outra div */
 }
 
 .doc ul::-webkit-scrollbar {
