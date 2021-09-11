@@ -79,3 +79,6 @@ C:\Users\seles\OneDrive\Área de Trabalho\TCC\obj\Debug\net5.0\TCC.genruntimecon
 C:\Users\seles\OneDrive\Área de Trabalho\TCC\obj\Debug\net5.0\TCC.csproj.CopyComplete
 C:\Users\seles\OneDrive\Área de Trabalho\TCC\obj\Debug\net5.0\Razor\Views\Usuario\cadastro.cshtml.g.cs
 C:\Users\seles\OneDrive\Área de Trabalho\TCC\obj\Debug\net5.0\Razor\Views\Login\login.cshtml.g.cs
+C:\Users\Familia\Desktop\Junior\TCC Completo\TCC\obj\Debug\net5.0\TCC.pdb
+C:\Users\Familia\Desktop\TCC Completo\TCC\obj\Debug\net5.0\TCC.pdb
+C:\Users\Familia\Desktop\TCC\obj\Debug\net5.0\TCC.pdb

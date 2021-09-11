@@ -131,11 +131,11 @@ form
 
                 /* ------pesquiar--------- */
 
-.search-container {
-    /* width: 90px;
+/* .search-container {
+    width: 90px;
     height: 50px;
     border-radius: 0.2rem;
-    margin-left: 7.7rem; */
+    margin-left: 7.7rem;
 
     width: 231px;
     height: 27px;
@@ -145,9 +145,30 @@ form
     justify-items: flex-end ;
     text-align: center;
     border: 1px solid #DCDCDC;
+} */
+
+.search-container {
+    width: 21.5rem;
+    height: 2.8rem;
+    background: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 0.1rem #dcdcdc;
+    border-radius: 0.2rem;
+    margin-left: 7.7rem;
 }
 
+#search {
+    display: flex;
+    padding-left: 2.9rem;
+    justify-content: center;
+}
 
+#search img {
+    width: 1rem;
+    margin-right: 0.5rem;
+}
 
 .doc 
 {
