@@ -1,2 +1,2 @@
-# TCC
-TCC Site para guardar recibos , comprovantes e notas fiscais
+Projeto final de Conclusão do curso da faculdade.
+Tendo a finalidade de armazenar recibos e outros comprovantes em uma rede web 
