@@ -77,7 +77,7 @@ body{
 {
     width: 489px;
     height: 492px;
-    background: #c4c4c4fa;
+    background: #e7e5e5fa;
     margin: 20px 0 0 0 ;
     display: flex;
     text-align: center;
@@ -98,14 +98,3 @@ body{
     color: #2686CC;
 }   
 
-footer
-{
-    Width :1366px;
-    Height: 81px;
-    font-family: 'Roboto';
-    font-size: 50px;
-    color: #FFFFFF;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-}
