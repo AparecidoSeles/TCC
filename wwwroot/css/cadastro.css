@@ -18,14 +18,14 @@ body{
     flex-direction: column;
 }
 
-.topo
+/* .topo
 {
     width: 100%;
     height: 160px;
     background-color: #1246FE;
-}
+} */
 
-.text
+/* .text
 {
     padding-top: 20px;
     font-size: 25px;
@@ -34,11 +34,10 @@ body{
 .text h1
 {
     margin-left: 480px;
-}
+} */
 .conteiner h1
 {
-    font-size: 50px;
-    /* margin-top: 50px; */
+    font-size: 30px;
 }
 .cdtr
 {

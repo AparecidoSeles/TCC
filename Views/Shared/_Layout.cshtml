@@ -31,36 +31,30 @@
     }
 </head>
 <body>
-    @* @switch (ViewData["Title"])
+     @switch (ViewData["Title"].ToString())
     {
         case "Home":
             break;
 
-        case "cadastro":
-        break;
+        @* case "Cadastro":
+        break; *@
 
         default:
-        <header class="topo">
-            <div class="text">
-                <h1>Payment Receipts</h1>
-            </div>
-      </header>
+       <header class="topo">
+                <h1>Contabilimed</h1>
+        </header>
 
-        break;
-    }  *@
-    
-     @if((ViewData["Title"].ToString() != "home") && (ViewData["Title"].ToString() != "Cadastro"))
-            {
-                <header class="topo">
-                    <div class="text">
-                        <h1>Contabilimed</h1>
-                    </div>
-                </header>
-            }
-         
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
+        break;
+    }  
+    
+     @* @if((ViewData["Title"].ToString() != "Login") && (ViewData["Title"].ToString() != "Index"))
+            {
+                
+            }
+       *@   
 
            
 
