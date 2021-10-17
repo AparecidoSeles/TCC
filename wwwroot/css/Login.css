@@ -5,7 +5,10 @@
     box-sizing: border-box;
 
 }
-
+main{
+    display: flex;
+    flex-direction: column;
+}
 body{
     width:1366px;
     height: 1024px;
@@ -21,7 +24,7 @@ body{
 .retangulo1{
     width: 486px;
     height: 500px;
-    /* margin-left: 430px; */
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;

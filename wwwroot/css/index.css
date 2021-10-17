@@ -5,22 +5,32 @@
     box-sizing: border-box;
 
 }
-
-.body{
+main
+{
+    background-image: url("../images/imagem_fundo.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+body{
     height: 100%;
     width: auto;
     font-family:"roboto";
     font-size: 50px;                   
-    background-color: white;
+    /* background-color: white; */
+    /*  background-image: url("../images/imagem_fundo.jpeg");
+    background-position: center;
+    background-size: cover;
+   background-size: 100%; */
 }
 
 .topo{
-    height: 90px;
-    width: 1350px;
+    height: 100%;
+    width: 100% ;
     font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background:white;
 }
 
 .text
@@ -40,22 +50,29 @@
     display: flex;
     justify-content: space-around;
     padding-top: 45px;
+    background: white;
 }
 
 .entrar1
 {
-    height:400px;
+    height:600px;
     width:1350px;
     font-size: 50px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding-top: 45px;
-    background-image: url("../images/imagem_fundo.jpeg");
-    background-size: 100%;
+    /* background-image: url("../images/imagem_fundo.jpeg");
+    background-size: 100%; */
 }
 
+.entrar1 p
+{
+    margin-top: 20px;
+    font-size: 40px;
+}
 
 .btn{
     width: 110px;
@@ -76,7 +93,6 @@
     font-size: 18px;
     text-decoration: none;
     color: #000;
-    background-color: #FFF;
     border-radius: 12px;
     display :flex;
     justify-content: center;
@@ -86,14 +102,14 @@
 .content{
     width: 100%;
     height: 169px;
-    background-color: #FFFDFD;  
+    /* background-color: #FFFDFD;   */
     display: flex;
 }
 .campos
 {
     width: 720px;
     height: 169px;
-    border: 0.5px solid #000000;
+    /* border: 0.5px solid #000000; */
 }
 
 .campos p

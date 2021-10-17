@@ -18,10 +18,15 @@ main
     height: auto;
 }
 
-.topo{
-    width: 1366px;
-    height: 150px;
-    background-color: #0554C0;  
+.topo
+{
+    height: 100%;
+    width: 100% ;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:white;
 }
 
 .text

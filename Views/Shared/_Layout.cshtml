@@ -31,33 +31,23 @@
     }
 </head>
 <body>
-     @switch (ViewData["Title"].ToString())
+     @switch (ViewData["Title"])
     {
-        case "logar ":
-            break;
-
-        @* case "Cadastro":
-        break; *@
-
+       case "Login":
+        break;
+        case "Cadastro":
+        break;
         default:
        <header class="topo">
                 <h1>Contabilimed</h1>
         </header>
+        break;
 
+    }  
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-        break;
-    }  
-    
-     @* @if((ViewData["Title"].ToString() != "Login") && (ViewData["Title"].ToString() != "Index"))
-            {
-                
-            }
-       *@   
-
-           
-
+        
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
