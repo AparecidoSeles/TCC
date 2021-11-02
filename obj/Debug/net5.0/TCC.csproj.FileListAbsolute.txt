@@ -49,7 +49,6 @@ C:\Users\seles\OneDrive\Área de Trabalho\TCC\bin\Debug\net5.0\ref\TCC.dll
 C:\Users\seles\OneDrive\Área de Trabalho\TCC\bin\Debug\net5.0\TCC.pdb
 C:\Users\seles\OneDrive\Área de Trabalho\TCC\bin\Debug\net5.0\TCC.Views.dll
 C:\Users\seles\OneDrive\Área de Trabalho\TCC\bin\Debug\net5.0\TCC.Views.pdb
-C:\Users\seles\OneDrive\Área de Trabalho\TCC\obj\Debug\net5.0\TCC.csprojAssemblyReference.cache
 C:\Users\seles\OneDrive\Área de Trabalho\TCC\obj\Debug\net5.0\TCC.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\seles\OneDrive\Área de Trabalho\TCC\obj\Debug\net5.0\TCC.AssemblyInfoInputs.cache
 C:\Users\seles\OneDrive\Área de Trabalho\TCC\obj\Debug\net5.0\TCC.AssemblyInfo.cs
@@ -82,3 +81,4 @@ C:\Users\seles\OneDrive\Área de Trabalho\TCC\obj\Debug\net5.0\Razor\Views\Login
 C:\Users\Familia\Desktop\Junior\TCC Completo\TCC\obj\Debug\net5.0\TCC.pdb
 C:\Users\Familia\Desktop\TCC Completo\TCC\obj\Debug\net5.0\TCC.pdb
 C:\Users\Familia\Desktop\TCC\obj\Debug\net5.0\TCC.pdb
+C:\Users\seles\OneDrive\Área de Trabalho\TCC\obj\Debug\net5.0\TCC.csproj.AssemblyReference.cache
