@@ -10,11 +10,11 @@ body{
     height: 100%;
     font-family:"roboto";
     font-size: 50px;                            
-    background-color: white;
+    background-color: rgb(247, 241, 241);
 }
 main
 {
-    width: 1366px;
+    width: auto;
     height: auto;
 }
 
@@ -59,6 +59,7 @@ main
 }
 .Adicionar-conteudo
 {
+    width: 900px;
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
@@ -177,10 +178,11 @@ form
 
 .doc 
 {
-    width: 1366px;
+    width: 1000px;
     height: 500px;
     font-size: 30px;
     margin-left: 200px;
+    background-color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -193,10 +195,10 @@ form
     padding-left: 20px;
 
     display: flex;
-    background-color: rgb(159, 228, 240);
+    /* background-color: rgb(159, 228, 240); */
     justify-content: space-between;
     flex-wrap: wrap;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     border-radius: 10px;
     overflow-x: auto;         /*serve para deixar o quadrado de scroll dentro da main , para nao atravessar outra div */
 }
@@ -227,7 +229,7 @@ form
 
 footer
 {
-    Width :1366px;
+    Width :100%;
     Height: 81px;
     font-family: 'Roboto';
     font-size: 50px;
@@ -235,4 +237,29 @@ footer
     background-color: black;
     display: flex;
     justify-content: center;
+}
+
+/* opção sair */
+.options 
+{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.options a:first-child {
+    margin-right: 3rem;
+}
+
+.options a {
+    text-decoration: none;
+    color: #2686CC;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.options a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }

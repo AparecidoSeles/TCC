@@ -196,16 +196,34 @@ body{
 {
     width: 50%;
     height: 416px;
-    border: 1px solid #000000;
-    background-image: url("../images/cadeado.svg");
+    /* border: 1px solid #000000; */
+    background-image: url("../images/imagem1.jpeg");
     background-size:cover;
+    color: white;
+    font-size: 40px;
+    /*-webkit-text-stroke-width: 2px;       colocar uma borda no texto e a largura   */
+   /* -webkit-text-stroke-color: #000;   colocar da borda  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
 
 .img2
 {
     width: 50%;
     height: 416px;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
+    background-image: url("../images/imagem2.jpeg");
+    color: white;
+    font-size: 40px;
+    /*-webkit-text-stroke-width: 2px;       colocar uma borda no texto e a largura   */
+    /* -webkit-text-stroke-color: #000; colocar da borda  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     /* background-color: turquoise; */
 }
