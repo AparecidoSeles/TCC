@@ -48,6 +48,7 @@ body{
     height: 89px;
     width: 100%;
     display: flex;
+    color: black;
     justify-content: space-around;
     padding-top: 45px;
     background: white;
@@ -56,7 +57,7 @@ body{
 .entrar1
 {
     height:600px;
-    width:1350px;
+    width:100%;
     font-size: 50px;
     color: white;
     display: flex;
@@ -168,8 +169,8 @@ body{
     height: 300px;
     margin-top: 80px;
     text-transform: uppercase;
-    font-size: 30px;
-    color: rgb(68, 68, 250);
+    font-size: 35px;
+    color: rgb(56, 56, 207);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -201,39 +202,71 @@ body{
     background-size:cover;
     color: white;
     font-size: 40px;
+    padding-left: 45px;
     /*-webkit-text-stroke-width: 2px;       colocar uma borda no texto e a largura   */
-   /* -webkit-text-stroke-color: #000;   colocar da borda  */
+    /*-webkit-text-stroke-color: #000;   colocar da borda  */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: inherit;
     flex-direction: column;
 }
 
+.img span
+{
+    padding-top: 25px;
+    font-size: 30px;
+}
+
+.img button 
+{
+    margin-top: 30px;
+    height: 50px;
+    width: 150px;
+    color: white;
+    border: none;
+    background-color:  rgb(68, 68, 250);
+}
 
 .img2
 {
     width: 50%;
     height: 416px;
-    /* border: 1px solid #000000; */
     background-image: url("../images/imagem2.jpeg");
     color: white;
     font-size: 40px;
-    /*-webkit-text-stroke-width: 2px;       colocar uma borda no texto e a largura   */
-    /* -webkit-text-stroke-color: #000; colocar da borda  */
+    padding-left: 45px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items :inherit ;
     flex-direction: column;
-
+    /* border: 1px solid #000000; */    
+    /*-webkit-text-stroke-width: 2px;       colocar uma borda no texto e a largura   */
+    /* -webkit-text-stroke-color: #000;     colocar da borda  */
     /* background-color: turquoise; */
 }
+
+.img2 span
+{
+    padding-top: 45px;
+    font-size: 30px;
+}
+
+.img2 button 
+{
+    height: 50px;
+    width: 150px;
+    color: white;
+    border: none;
+    margin-top: 65px;
+    background-color:  rgb(68, 68, 250);
+}
+
 .content2 h1 
 {
     font-family: 'Roboto';
     font-size: 45px;
     padding-top: 75px;
     padding-left: 50px;
-  
 }  
 
 .content2 h2 
@@ -244,9 +277,143 @@ body{
     padding-left: 100px;
 }
 
+.contate
+{
+    height:600px;
+    width:100%;
+    background-color: white;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.esquerda
+{
+    width: 50%;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: column; 
+}
+
+.esquerda h3
+{
+    text-transform: uppercase;
+    padding-left: 150px;
+    font-size: 50px;
+    color: rgb(56, 56, 207);
+}
+
+.esquerda p 
+{
+    padding-left: 150px;
+    font-size: 20px;
+    color: rgb(117, 107, 107);
+    /* margin-top: 80px; */
+}
+
+.direita
+{
+    width: 50%;
+    height: 600px;
+    font-size: 30px;
+    margin-left: 200px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.direita span
+{
+
+    color:rgb(117, 107, 107);
+    font-size: 25px;
+    margin-left: 50px;
+    padding-bottom: 60px;
+}
+/* ======================================================================================================= */
+/* Ícones e Inputs de Login */
+
+  
+  .item {
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+  }
+    
+  .input__login {
+    border: 0;
+    width: 350px;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 10px;
+    background: transparent;
+    color: #808080;
+    text-align: left;
+  }
+  
+  .input__login:hover,
+  .input__login:focus {
+    border: 0;
+    border-bottom: 1px solid ;
+    text-align: center;
+    background: transparent;
+    color: #595959;
+    text-align: left;
+  }
+  
+  /* webkit solution */
+  ::-webkit-input-placeholder {
+    text-align: left;
+  }
+  
+  /* mozilla solution */
+  input:-moz-placeholder {
+    text-align: left;
+  }
+  
+  /* Botões de login */
+  
+  .btn {
+    margin-top: 10px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    width: 350px;
+    padding: 10px 52px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 10px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .btn__login {
+    background-color: black;
+    color: #fff;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+    box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+  }
+  
+  .btn__login:hover {
+    background-color: black;
+    color: white;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+    box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+  }
+
+
+/* ========================================================================================================= */
 footer
 {
-    Width :1366px;
+    Width :100%;
     Height: 81px;
     font-family: 'Roboto';
     font-size: 50px;
@@ -254,4 +421,5 @@ footer
     background-color: black;
     display: flex;
     justify-content: center;
+    align-items: center;
 }

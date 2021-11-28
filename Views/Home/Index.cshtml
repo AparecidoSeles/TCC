@@ -8,16 +8,16 @@
     <main>
        
         <div class="entrar"> <!-- inicio entrar-->
-            <a class="btn" asp-area="" asp-action="index"     asp-controller="Home">Início</a>
-            <a class="btn2" asp-area="" asp-action="cadastro" asp-controller="Usuario">Sobre nós</a>
-            <a class="btn2" asp-area="" asp-action="        " asp-controller="       ">Serviços</a>
-            <a class="btn" asp-area="" asp-action="index"     asp-controller="Login">Entrar</a>
-            <a class="btn2" asp-area="" asp-action="cadastro" asp-controller="Usuario">Entre em contato</a>
+            <a class="btn2"  asp-area="" asp-action="index"     asp-controller="Home">Início</a>
+            <a class="btn2"  asp-area="" >Sobre nós</a>
+            <a class="btn2"  asp-area="" >Serviços</a>
+            <a class="btn2"  asp-area="" asp-action="index"     asp-controller="Login">Entrar</a>
+            <a class="btn2"  asp-area="" >Entre em contato</a>
          </div>
          <div class="entrar1">
              <h3>Bem vindo(a) à <br>Contabilimed </h3>
              <p>Para todas as suas necessidades contábeis</p>
-         </div><!--fim entrar  -->
+         </div> <!--fim entrar  -->
 
          <section class="content">
             <div class="campos"> 
@@ -40,12 +40,57 @@
          </section>
          <section class="images ">
             <div class="img">
-                <p> planejamento Tributátrio para pessoas jurídicas</p>
+                <p> Planejamento Tributátrio para pessoas jurídicas</p>
                 <span>Aliviando o stress</span>
+                <button>Entre em Contato</button>
             </div >
             <div class="img2">
                <p>Consultoria Fiscal</p>
                <span>Organizando vida Financeira</span>
+               <button>Entre em Contato</button>
+            </div>
+         </section>
+         <section class="contate"> 
+             <div class="esquerda">
+                 <h3>Contate-nos</h3>
+                 <p>Av. Bernardinho de Campos. 98 - São Paulo</p>
+                 <p>rricchard835@gmail.com</p>
+                 <p>Tel - (11)34567890</p>
+             </div>
+             <div class="direita"> 
+@* ======================================================================================================= *@
+          <form>
+            <div class="item">
+              <input
+                class="input__login" placeholder="Nome Completo" type="text" />
+            </div>
+            <div class="item">
+              <input
+                class="input__login" placeholder="Insira seu Email" type="email" />
+            </div>
+            <div class="item">
+              <input
+                class="input__login" placeholder="Telefone" type="tel" />
+            </div>
+            <div class="item">
+              <input
+                class="input__login" placeholder="Insira seu Endereço" type="text" />
+            </div>
+            <div class="item">
+              <input
+                class="input__login" placeholder="Assunto" type="text" />
+            </div>
+            <div class="item">
+              <input
+                class="input__login" placeholder="Digite aqui sua Mensagem  " type="text" />
+            </div>
+            <div class="item">
+              <button class="btn btn__login" id="btn__login">Enviar</button>
+            </div>
+          </form>
+          <span>Obrigado pelo envio !</span>
+
+ @* ======================================================================================== *@
             </div>
          </section>
        

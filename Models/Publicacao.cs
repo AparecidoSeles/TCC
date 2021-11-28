@@ -79,8 +79,7 @@ namespace TCC.Models
             }
 
             return publicacoes;
-        }
-
+            }
         }
 
         public void Update(Publicacao p)

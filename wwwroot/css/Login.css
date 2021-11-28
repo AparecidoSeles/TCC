@@ -22,7 +22,7 @@ body{
 }
 
 .retangulo1{
-    width: 486px;
+    width: 386px;
     height: 500px;
     margin-top: 50px;
     display: flex;
@@ -55,14 +55,14 @@ body{
     align-items: center;
 }
 .L-form_login input{
-    width: 350px;
-    height: 60px;
-    font-size: 25px;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
     margin-bottom: 42px;
     background: #FAFAFA;
     border: 1px solid #DCDCDC;
     border-radius: 12px;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     text-align: center;
 }
 .L-form_login .input1{
@@ -74,14 +74,14 @@ body{
 }
 .L-form_login button{
     width: 230px;
-    height: 76px;
+    height: 46px;
     font-size: 30px;
     border: 1px solid;
     margin-top: 35px;
     background:#1246FE;
     color: black;
-    border-radius: 2px solid #000;
-    border-radius: 12px;
+    border-radius: 1px solid #000;
+    border-radius: 8px;
 }
 .button
 {
@@ -93,7 +93,12 @@ body{
     margin-left: 90px;
     background:#1246FE;
     color: black;
-    border-radius: 2px solid #000;
+    border-radius: 1px solid #000;
+}
+
+.link p
+{
+    text-decoration: none;
 }
 
 .erro 

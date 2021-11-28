@@ -9,6 +9,10 @@ namespace TCC.Controllers
     [Route("Publicacao")]
     public class PublicacaoController : Controller
     {
+        [TempData]
+        public string Mensagem2 { get; set; }
+
+        Usuario usuariomodel = new Usuario();
         Publicacao publicacaomodel = new Publicacao();
 
         [Route("Listar")]

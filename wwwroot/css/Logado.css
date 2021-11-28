@@ -137,7 +137,7 @@ form
 
                 /* ------pesquiar--------- */
 
-/* .search-container {
+.search-container {
     width: 90px;
     height: 50px;
     border-radius: 0.2rem;
@@ -151,7 +151,7 @@ form
     justify-items: flex-end ;
     text-align: center;
     border: 1px solid #DCDCDC;
-} */
+}
 
 .search-container {
     width: 21.5rem;
@@ -191,14 +191,10 @@ form
 .doc ul {
     width: 1000px;
     height: 1000px;
-    /* padding-top: 20px; */
     padding-left: 20px;
-
     display: flex;
-    /* background-color: rgb(159, 228, 240); */
     justify-content: space-between;
     flex-wrap: wrap;
-    /* border: 1px solid #000000; */
     border-radius: 10px;
     overflow-x: auto;         /*serve para deixar o quadrado de scroll dentro da main , para nao atravessar outra div */
 }
